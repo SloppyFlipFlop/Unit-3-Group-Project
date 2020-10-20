@@ -13,6 +13,26 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+        .review {
+            width: 200px;
+            background-color: whitesmoke;
+            transition-duration: 0.1s;
+            transition-property: transform background-color;
+        }
+
+        .review:hover {
+            transform: translateY(-5px);
+            background-color: #ffbb00;
+        }
+
+        .reviewlisting {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 4;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -34,6 +54,24 @@
     <main>
         <div class="header">
             <h1>CRAMALOT</h1>
+        </div>
+
+        <div class="reviews">
+            <h2>Reviews</h2>
+            <div class="reviewlisting">
+                <div class="review">
+                    <p><em>"I'll never eat anything else again!"</em><span style="color: blue;"> - Jeff R.</span></p>
+                </div>
+                <div class="review">
+                    <p><em>"I left it out in the sun for a fortnight. It became harder than steel!"</em><span style="color: blue;"> - Carson K.</span></p>
+                </div>
+                <div class="review">
+                    <p><em>"Its a little mushy substance I put between my gums. It wasn't dip though."</em><span style="color: blue;"> - Bob A.</span></p>
+                </div>
+                <div class="review">
+                    <p><em>"The wholesale value is extremely convenient."</em><span style="color: blue;"> - Ted N.</span></p>
+                </div>
+            </div>
         </div>
 
         <div class="contact">
