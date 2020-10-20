@@ -129,8 +129,17 @@ main {
     width: 100%;
     display: flex;
     margin: 0 auto;
-    flex-flow: row;
+    flex-flow: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main div {
+    background: white;
+    border-radius: 1em;
+    margin: 15px;
+    padding: 10px;
+    width: auto;
+    height: auto;
 }
 
 /* HOME CSS */
