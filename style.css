@@ -1,0 +1,9 @@
+/* COLORS
+color: #2225bd;
+color: #ffbb00;*/
+
+/* Base Variables */
+:root {
+    --color-blue: #2225bd;
+    --color-yellow: #ffbb00;
+}
