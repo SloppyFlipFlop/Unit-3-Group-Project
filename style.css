@@ -11,6 +11,7 @@ html, body {
 
 li a {
     color: white;
+    text-decoration: none;
 }
 
 li a:hover {
