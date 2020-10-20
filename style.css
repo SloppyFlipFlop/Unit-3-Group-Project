@@ -74,11 +74,27 @@ header form {
     margin: 0 auto;
 }
 
-header form input {
+header form input[type="search"] {
     margin-top: 5px;
     outline: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 500px;
+    border-radius: 1em;
+    border: none;
+}
+
+header form input[type="submit"] {
+    background: none;
+    outline: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
+
+header form input[type="submit"]:hover {
+    background: var(--color-yellow);
+    border-radius: 3em;
 }
 
 header form svg {
