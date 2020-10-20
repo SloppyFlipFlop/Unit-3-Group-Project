@@ -81,6 +81,8 @@ header form input[type="search"] {
     width: 500px;
     border-radius: 1em;
     border: none;
+    padding: 2px;
+    padding-left: 6px;
 }
 
 header form input[type="submit"] {
