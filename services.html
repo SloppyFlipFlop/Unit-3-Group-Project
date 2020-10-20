@@ -13,6 +13,41 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+        .products {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column;
+        }
+
+        .newitem {
+            transform: rotateZ(-15deg);
+            font-size: 12px;
+            color: green;
+            display: inline-block;
+            transition-property: transform;
+            transition-duration: 0.5s;
+        }
+
+        .newitem:hover {
+            transform: translateY(-15px) rotateZ(15deg);
+        }
+
+        .product-image {
+            width: 200px;
+            height: auto;
+        }
+
+        .subproduct {
+            background-color: whitesmoke;
+        }
+
+        .product {
+            display: flex;
+            flex-flow: column;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,8 +66,34 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Home</h1>
+    <main style="background-color: #00000000;">
+        <div class="products">
+            <div class="product">
+                <h2>Cram</h2>
+                <p>Each flavor is sold by the bucket (1gal) for 20 gold coins.</p>
+                <div class="subproduct">
+                    <h3>Berry</h3>
+                    <img class="product-image" src="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" alt="berry cram image" srcset="">
+                    <p style="font-size: 6px;">Source: <a href="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" target="_blank">google.com</a></p>
+                    <p>Flavorful, delicious, BERRY.</p>
+                </div>
+                <div class="subproduct">
+                    <h3>Very Berry</h3>
+                    <img class="product-image" src="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" alt="very berry cram image" srcset="">
+                    <p style="font-size: 6px;">Source: <a href="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" target="_blank">google.com</a></p>
+                    <p>The same as Berry, but <strong>VERY</strong>.</p>
+                </div>
+                <div class="subproduct">
+                    <h3>Raspberry</h3>
+                    <img class="product-image" src="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" alt="raspberry image" srcset="">
+                    <p style="font-size: 6px;">Source: <a href="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" target="_blank">google.com</a></p>
+                    <p>Not to be confused with pie.</p>
+                </div>
+            </div>
+            <div class="product">
+                <h2><span class="newitem">NEW</span> Cram Sword</h2>
+            </div>
+        </div>
     </main>
 
     <footer>
