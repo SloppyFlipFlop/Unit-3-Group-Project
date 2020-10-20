@@ -153,6 +153,7 @@ main div {
     border-radius: 10em;
     background-color: var(--color-blue);
     color: white;
+    filter: drop-shadow(0 0 5px #2326b9 )
 }
 
 .header h1 {
