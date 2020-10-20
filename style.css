@@ -84,4 +84,5 @@ main {
     min-height: calc(100vh - 2.5em);
     width: 100%;
     display: flex;
+    margin: 0 auto;
 }
