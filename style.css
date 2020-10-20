@@ -127,9 +127,9 @@ footer a {
 main {
     min-height: calc(100vh - 2.5em);
     width: 100%;
-    margin-top: 500px;
     display: flex;
     margin: 0 auto;
+    flex-flow: row;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -144,4 +144,8 @@ main {
     border-radius: 10em;
     background-color: var(--color-blue);
     color: white;
+}
+
+.header h1 {
+    padding-top: 60px;
 }
