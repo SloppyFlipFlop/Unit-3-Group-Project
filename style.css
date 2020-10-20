@@ -73,8 +73,11 @@ footer {
 footer * {
     padding: 1px;
     margin: 0px;
-    color: var(--color-yellow);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: var(--color-yellow);
 }
 
 main {
