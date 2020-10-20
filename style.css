@@ -11,10 +11,15 @@ html, body {
 
 li a {
     color: white;
+    text-decoration: none;
 }
 
 li a:hover {
     color: var(--color-yellow);
+}
+
+footer a:hover {
+    color: white;
 }
 
 body {
