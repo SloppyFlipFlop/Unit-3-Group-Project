@@ -37,15 +37,33 @@
         .product-image {
             width: 200px;
             height: auto;
+            transition-duration: 0.5s;
+            transition-property: width height;
+        }
+
+        .subproduct:hover .product-image {
+            width: 400px;
         }
 
         .subproduct {
             background-color: whitesmoke;
+            width: fit-content;
+            height: fit-content;
+            flex-shrink: 2;
+            transition-duration: 0.5s;
+            transition-property: background-color transform box-shadow;
         }
 
-        .product {
+        .subproduct:hover {
+            background-color: #ffbb00;
+            transform: translateY(-10px);
+            box-shadow: 1px 1px 5px gray;
+        }
+
+        .productlist {
             display: flex;
-            flex-flow: column;
+            flex-flow: row;
+            justify-content: space-evenly;
         }
     </style>
 </head>
@@ -71,27 +89,30 @@
             <div class="product">
                 <h2>Cram</h2>
                 <p>Each flavor is sold by the bucket (1gal) for 20 gold coins.</p>
-                <div class="subproduct">
-                    <h3>Berry</h3>
-                    <img class="product-image" src="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" alt="berry cram image" srcset="">
-                    <p style="font-size: 6px;">Source: <a href="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" target="_blank">google.com</a></p>
-                    <p>Flavorful, delicious, BERRY.</p>
-                </div>
-                <div class="subproduct">
-                    <h3>Very Berry</h3>
-                    <img class="product-image" src="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" alt="very berry cram image" srcset="">
-                    <p style="font-size: 6px;">Source: <a href="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" target="_blank">google.com</a></p>
-                    <p>The same as Berry, but <strong>VERY</strong>.</p>
-                </div>
-                <div class="subproduct">
-                    <h3>Raspberry</h3>
-                    <img class="product-image" src="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" alt="raspberry image" srcset="">
-                    <p style="font-size: 6px;">Source: <a href="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" target="_blank">google.com</a></p>
-                    <p>Not to be confused with pie.</p>
+                <div class="productlist">
+                    <div class="subproduct">
+                        <h3>Berry</h3>
+                        <img class="product-image" src="images/berrycram.jpg" alt="berry cram image" srcset="">
+                        <p style="font-size: 6px;">Source: <a href="https://midasfoods.com/wp-content/uploads/2018/01/greenjello.jpg" target="_blank">google.com</a></p>
+                        <p>Flavorful, delicious, BERRY.</p>
+                    </div>
+                    <div class="subproduct">
+                        <h3>Raspberry</h3>
+                        <img class="product-image" src="images/raspberrycram.jpg" alt="raspberry image" srcset="">
+                        <p style="font-size: 6px;">Source: <a href="https://www.gimmesomeoven.com/wp-content/uploads/2010/02/red-hot-jello-in-spoon-1.jpg" target="_blank">google.com</a></p>
+                        <p>Not to be confused with pie.</p>
+                    </div>
+                    <div class="subproduct">
+                        <h3>Very Berry</h3>
+                        <img class="product-image" src="images/veryberrycram.jpg" alt="very berry cram image" srcset="">
+                        <p style="font-size: 6px;">Source: <a href="https://flouronmyfingers.com/wp-content/uploads/2020/01/How-to-Make-Jello-picture-720x720.jpg" target="_blank">google.com</a></p>
+                        <p>The same as Berry, but <strong>VERY</strong>.</p>
+                    </div>
                 </div>
             </div>
             <div class="product">
                 <h2><span class="newitem">NEW</span> Cram Sword</h2>
+                <p>Made with cram that was layed out in the sun for a fortnight. Harder than steel. A formidable blade conquered by none.</p>
             </div>
         </div>
     </main>
