@@ -12,7 +12,7 @@
     <meta property="og:title" content="Cramalot">
     <title>Order - Cramalot</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="orders.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -34,7 +34,90 @@
     </header>
 
     <main>
-        <h1>Home</h1>
+        <header>
+            <h1>Checkout page</h1>
+        </header>
+
+        <!-- <form>
+            <fieldset>
+                <legend>Product Flavor</legend>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Flavors</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a>Raspberry Cram</a>
+                        <a>Berry Cram</a>
+                        <a>VERY Berry Cram</a>
+                    </div>
+                </div>
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function (event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+            </fieldset>
+
+            <fieldset action="data.json" method="POST">
+                <legend>User Information</legend>
+
+                <ul>
+                    <li>
+                        <label for="Credit_Card_Number">Credit Card Number:</label>
+                        <input type="text" id="Credit_Card_Number" name="user.creditCardNumber">
+                    </li>
+                </ul>
+
+                <ul class="shipto">
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user.name">
+                    </li>
+
+                    <li>
+                        <label for="address">Ship to:</label>
+                        <input type="text" id="address" name="user.address">
+                    </li>
+                </ul>
+            </fieldset>
+        </form> -->
+
+        <form>
+            <fieldset class="user-order">
+                <fieldset class="user-info">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user.name">
+                        </li>
+                        <li>
+                            <label for="Credit_Card_Number">Credit Card Number:</label>
+                            <input type="text" id="Credit_Card_Number" name="user.Credit_Card_Number">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="product-pick">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </fieldset>
+            </fieldset>
+        </form>
     </main>
 
     <footer>

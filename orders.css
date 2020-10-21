@@ -1,0 +1,217 @@
+/* Base Variables */
+:root {
+    --color-blue: #2326b9;
+    --color-yellow: #ffbb00;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--color-yellow);
+}
+
+footer a:hover {
+    color: white;
+}
+
+body {
+    background-color: #FFBB00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23eba440' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23d78d5c' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23c07672' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23a86085' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%238b4b97' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%236737a8' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%232326b9' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: var(--color-blue);
+    color: white;
+    width: 100%;
+    height: 3em;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+    font-family: 'Arvo', serif;
+}
+
+header * {
+    padding: 1px;
+    margin: 3px;
+}
+
+header h1 {
+    color: var(--color-yellow);
+}
+
+header h1:hover {
+    color: white;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+header form input[type="search"] {
+    margin-top: 5px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    border-radius: 1em;
+    border: none;
+    padding: 2px;
+    padding-left: 6px;
+}
+
+header form input[type="submit"] {
+    background: none;
+    outline: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
+
+header form input[type="submit"]:hover {
+    background: var(--color-yellow);
+    border-radius: 3em;
+}
+
+header form svg {
+    width: 32px;
+    height: 32px;
+}
+
+footer {
+    background-color: var(--color-blue);
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+}
+
+footer * {
+    padding: 1px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: var(--color-yellow);
+}
+
+main {
+    min-height: calc(100vh - 2.5em);
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-flow: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main div {
+    background: white;
+    border-radius: 1em;
+    margin: 15px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+/* HOME CSS */
+.header {
+    font-family: 'Arvo', serif;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10em;
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.header h1 {
+    padding-top: 60px;
+}
+
+/* Order page CSS */
+
+main form fieldset {
+    width: 1290;
+    border: 5px solid #f37622;
+}
+
+.user-order .user-info {
+    margin: auto;
+    order: 1;
+}
+
+.user-order .user-info {
+    order: 2;
+    margin: auto;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main form fieldset .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+main form fieldset .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+main form fieldset .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+main form fieldset .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+main form fieldset .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+main form fieldset .dropdown a:hover {background-color: #ddd;}
+
+main form fieldset .show {display: block;} */
