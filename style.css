@@ -165,3 +165,8 @@ main div {
 .header h1 {
     padding-top: 60px;
 }
+
+.Creators {
+    position: relative;
+    left: 45%;
+}
