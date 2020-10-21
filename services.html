@@ -12,60 +12,8 @@
     <title>Products - Cramalot</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-    <style>
-        .products {
-            display: flex;
-            justify-content: space-between;
-            flex-flow: column;
-        }
-
-        .newitem {
-            transform: rotateZ(-15deg);
-            font-size: 12px;
-            color: green;
-            display: inline-block;
-            transition-property: transform;
-            transition-duration: 0.5s;
-        }
-
-        .newitem:hover {
-            transform: translateY(-15px) rotateZ(15deg);
-        }
-
-        .product-image {
-            width: 200px;
-            height: auto;
-            transition-duration: 0.5s;
-            transition-property: width height;
-        }
-
-        .subproduct:hover .product-image {
-            width: 400px;
-        }
-
-        .subproduct {
-            background-color: whitesmoke;
-            width: fit-content;
-            height: fit-content;
-            flex-shrink: 2;
-            transition-duration: 0.5s;
-            transition-property: background-color transform box-shadow;
-        }
-
-        .subproduct:hover {
-            background-color: #ffbb00;
-            transform: translateY(-10px);
-            box-shadow: 1px 1px 5px gray;
-        }
-
-        .productlist {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-evenly;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -114,6 +62,7 @@
             <div class="productlist">
                 <div class="subproduct">
                     <h2><span class="newitem">NEW</span> Cram Sword</h2>
+                    <h4><span style="color:green;">Just 50 gold coins!</span></h4>
                     <img class="product-image" src="images/Cram Sword.png" style="width: 500px;" alt="cram sword image" srcset="">
                     <p style="font-size: 6px;">Source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/1200px-Trp-Sword-14226124129-v06.png" target="_blank">google.com</a></p>
                     <p>Made with cram that was layed out in the sun for a fortnight. Harder than steel. A formidable blade conquered by none.</p>
