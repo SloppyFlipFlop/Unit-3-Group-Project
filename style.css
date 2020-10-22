@@ -46,6 +46,7 @@ header {
     padding: 2px;
     margin: 0px;
     font-family: 'Arvo', serif;
+    z-index: 5;
 }
 
 header * {
