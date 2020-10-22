@@ -16,7 +16,6 @@
 
     <style>
         .review {
-            width: 400px;
             background-color: whitesmoke;
             transition-duration: 0.1s;
             transition-property: transform background-color;
@@ -30,7 +29,8 @@
             color: #ffbb00;
         }
         .reviewlisting {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             justify-content: space-around;
             flex-grow: 7;
         }
@@ -78,7 +78,7 @@
 
         <div class="contact">
             <h3>Contact Us:</h3>
-            <p>Buisness Email: <a href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fmail.google.com%2Fmail&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession">CramAlot@gmail.com</a></p>
+            <p>Buisness Email: <a target="_blank" href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fmail.google.com%2Fmail&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession">CramAlot@gmail.com</a></p>
             <p>Buisness Phone Number: <strong>602-678-9898</strong></p>
         </div>
     </main>
@@ -86,7 +86,7 @@
     <footer>
         <p>Copyright 2020 Cramalot | Icon/Background Credits: <a href="https://www.svgbackgrounds.com/">VISIWIG</a></p>
         <div class="Creators">
-        <p>Creators: Kevin Ochoa, Daniel Nevarez, Timothy Phillips</p>
+            <p>Creators: Kevin Ochoa, David Nevarez, Timothy Phillips</p>
         </div>
     </footer>
 </body>
