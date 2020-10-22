@@ -8,6 +8,7 @@
 html, body {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 
@@ -176,4 +177,15 @@ main div {
 .Creators {
     position: relative;
     left: 45%;
+}
+
+/* Abstract animations */
+.wiggle {
+    animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(0px); }
 }
