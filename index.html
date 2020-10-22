@@ -16,7 +16,6 @@
 
     <style>
         .review {
-            width: 400px;
             background-color: whitesmoke;
             transition-duration: 0.1s;
             transition-property: transform background-color;
@@ -30,7 +29,8 @@
             color: #ffbb00;
         }
         .reviewlisting {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             justify-content: space-around;
             flex-grow: 7;
         }
