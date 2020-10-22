@@ -94,6 +94,12 @@ header form input[type="search"] {
     padding-left: 6px;
     flex-shrink: 3;
     flex-grow: 4;
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+}
+
+header form input[type="search"]:focus {
+    border-radius: 0em;
 }
 
 header form input[type="submit"] {
@@ -103,6 +109,9 @@ header form input[type="submit"] {
     width: 32px;
     height: 32px;
     margin-top: 8px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 3em;
 }
 
 header form input[type="submit"]:hover {
