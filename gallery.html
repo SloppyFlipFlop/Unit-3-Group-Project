@@ -13,6 +13,72 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        @media (max-width: 479px){       
+            .cramvid{
+                height: 360px;
+                width:540px;
+            }
+            .video{
+                margin: 0 auto;
+                width: fit-content;
+            }
+            .container{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .grid-i{
+                width: 200px;
+                height: 200px;
+                justify-self: center;
+                
+            }
+        }
+        @media (min-width: 480px){
+            .cramvid{
+                height: 360px;
+                width:540px;
+            }
+            .video{
+                margin: 0 auto;
+                width: fit-content;
+            }
+                .container{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .grid-i{
+                width: 200px;
+                height: 200px;
+                justify-self: center;
+                
+            }
+        }
+
+        .grid-i {
+            transition-property: transform box-shadow;
+            transition-duration: 0.5s;
+            }
+        .grid-i:hover {
+            transform: scale(1.5);
+            box-shadow: 1px 1px 5px black;
+        }
+
+        .video {
+            transition-property: transform box-shadow;
+            transition-duration: 0.5s;
+            outline: none;
+        }
+
+        .video:hover {
+            transform: scale(1.5) translateY(80px);
+            box-shadow: 1px 1px 5px black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,7 +98,20 @@
     </header>
 
     <main>
-        
+        <div class="content">
+            <div class="video" tabindex="0" id="vidframe" >
+                <iframe src="https://www.youtube.com/embed/Ll82POMkb8g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="vidd" allowfullscreen class="cramvid"></iframe>
+            </div>
+            
+            <div class="container">
+                <img src="https://i.redd.it/q8rzuhomvri41.jpg" alt="cram rasberry can" class="cramcan grid-i">
+                <img src="https://archive.naplesnews.com/Services/image.ashx?domain=www.naplesnews.com&file=cranberry-sauce_1416521432302_9710843_ver1.0_640_480.jpg&resize=" alt="Red cram jelly" class="redcram  grid-i">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/07/6a/a6/caption.jpg" alt="orange gram jelly with spoon" class="orangecram grid-i">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqebo906Rx5ZctgVby4Gk9wU_dhicU9p2JVg&usqp=CAU" alt="orange cram jelly" class="orangecram-2 grid-i">
+                <img src="https://i2.wp.com/www.feastofstarlight.com/wp-content/uploads/2015/06/jurassic-park-stop-motion-green-jello-scene.jpg?fit=3456%2C2304" alt="green cram jelly" class="greencram grid-i">
+                <img src="https://lh3.googleusercontent.com/proxy/WoK1Q731UnSzxUs713has8d1hV1MSidPymxf7rHbXPSdRUW6jF95Sq3-F9g3Ez5P5bjZRFdHxYFl3Kt0zJZzV61CaO-SkZJW3g2XjQ" alt="green cram jelly #2" class="greencram-2 grid-i">
+            </div>
+        </div>
     </main>
 
     <footer>
