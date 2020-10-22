@@ -141,77 +141,113 @@ main div {
     width: auto;
     height: auto;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Order Page CSS */
 
-/* HOME CSS */
-.header {
-    font-family: 'Arvo', serif;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 10em;
-    background-color: var(--color-blue);
-    color: white;
+/* User info CSS */
+.user-form {
+    background-color: #FF8E72;
+    width: 95%;
+    height: 95%;
+    border-radius: 1em;
+    margin: 20px;
+    display: flex;
+    flex-flow: row;
 }
 
-.header h1 {
-    padding-top: 60px;
+.user-form .user-checkoutInfo {
+    background-color: var(--color-yellow);
+    justify-content: space-evenly;
+    width: 250px;
+    height: 450px;
+    flex-grow: 1;
 }
 
-/* Order page CSS */
-
-main form fieldset {
-    width: 1290;
-    border: 5px solid #f37622;
+.user-form .products {
+    display: flex;
+    flex-flow: row;
+    background-color: var(--color-yellow);
+    justify-content: space-evenly;
+    width: 500px;
+    height: 450px;
+    flex-grow: 1;
 }
 
-.user-order .user-info {
-    margin: auto;
-    order: 1;
-}
+/* Product CSS */
 
-.user-order .user-info {
-    order: 2;
-    margin: auto;
-}
+/* .products {
+    display: flex;
+    justify-content: space-between;
+} */
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-main form fieldset .dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-main form fieldset .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-}
-
-main form fieldset .dropdown {
-    position: relative;
+.newitem {
+    transform: rotateZ(-15deg);
+    font-size: 12px;
+    color: green;
     display: inline-block;
+    transition-property: transform;
+    transition-duration: 0.5s;
 }
 
-main form fieldset .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.newitem:hover {
+    transform: translateY(-15px) rotateZ(15deg);
 }
 
-main form fieldset .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.product-image {
+    width: 200px;
+    height: auto;
+    transition-duration: 0.5s;
+    transition-property: width height;
 }
 
-main form fieldset .dropdown a:hover {background-color: #ddd;}
+.subproduct:hover .product-image {
+    width: 400px;
+}
 
-main form fieldset .show {display: block;} */
+.subproduct {
+    background-color: var(--color-yellow);
+    width: fit-content;
+    height: fit-content;
+    flex-shrink: 2;
+    transition-duration: 0.5s;
+    transition-property: background-color transform box-shadow;
+}
+
+.subproduct:hover {
+    background-color: #FFCE47;
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 5px gray;
+}
+
+.productlist {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background-color: #FF8E72;
+}
+
+.Product-title {
+    text-align: center;
+}
+
+.product-des {
+    text-align: center;
+}
+
+.user-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
