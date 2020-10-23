@@ -159,7 +159,6 @@ main div {
     background-color: var(--color-yellow);
     justify-content: space-evenly;
     width: 250px;
-    position: relative;
     height: 500px;
     flex-grow: 1;
 }
