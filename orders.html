@@ -13,7 +13,7 @@
     <title>Order - Cramalot</title>
 
     <link rel="stylesheet" href="orders.css">
-    <link rel="stylesheet" href="orders.js">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -43,16 +43,28 @@
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="user.name" placeholder="Your Name">
                 </li>
-
+                <li class="user-list">
+                    <label for="address">Address:</label>
+                    <input type="text" id="name" name="user.address" placeholder="11111 E. Road R., City, ST, COUNTRY">
+                </li>
                 <li class="user-list">
                     <label for="Credit_Card_Number">Credit Card Number:</label>
                     <input type="text" id="Credit_Card_Number" name="user.Credit_Card_Number" placeholder="xxxx-xxxx-xxxx-xxxx">
                 </li>
-
+                <li class="user-list">
+                    <label for="shipping">Select shipping type:</label>
+                    <br>
+                    <input type="radio" id="overnight" name="shipping" value="overnight">
+                    <label for="overnight">Overnight</label><br>
+                    <input type="radio" id="2day" name="shipping" value="2day">
+                    <label for="2day">2-Day</label><br>
+                    <input type="radio" id="long" name="shipping" value="long">
+                    <label for="long">5+ Day</label>
+                </li>
                 <li class="user-list">
                     <label for="SpecialInstructions">Please fill in the space below if any comments you have.</label>
                     <br>
-                    <textarea name="user.SpecialInstructions" id="SpecialInstructions" cols="30" rows="10" placeholder="Please fill in area with any comments you have on your order." style="width: 250px; height: 150px;"></textarea>
+                    <textarea name="user.SpecialInstructions" id="SpecialInstructions" cols="28" rows="6" style="resize: none;" placeholder="Please fill in area with any comments you have on your order." style="height: 150px;"></textarea>
                 </li>
 
                 <button type="submit">Submit</button>
@@ -112,6 +124,20 @@
                             <img class="product-image" src="images/veryberrycram.jpg" alt="very berry cram image" srcset="">
                             <p style="font-size: 6px;">Source: <a href="https://flouronmyfingers.com/wp-content/uploads/2020/01/How-to-Make-Jello-picture-720x720.jpg" target="_blank">google.com</a></p>
                             <p>The same as Berry, but <strong>VERY</strong>.</p>
+                            <li class="user-list">
+                                <label for="amount">Order Amount:</label>
+                                <input type="text" id="amount" name="user.orderAmount" placeholder="0">
+                            </li>
+                        </label>
+                    </div>
+
+                    <div class="subproduct" id="subproduct4" onclick="boxchecked(this.id)">
+                        <input type="checkbox" id="cramSword" name="user.order">
+                        <h3>Cram Sword (50 gold coins)</h3>
+                        <label for="cramSword" class="checkboxs">
+                            <img class="product-image" src="images/Cram Sword.png" alt="very berry cram image" srcset="">
+                            <p style="font-size: 6px;">Source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/1200px-Trp-Sword-14226124129-v06.png" target="_blank">google.com</a></p>
+                            <p>Made with cram that was layed out in the sun for a fortnight.</p>
                             <li class="user-list">
                                 <label for="amount">Order Amount:</label>
                                 <input type="text" id="amount" name="user.orderAmount" placeholder="0">
