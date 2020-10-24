@@ -125,7 +125,7 @@ footer a {
 }
 
 main {
-    min-height: calc(100vh - 2.5em);
+    min-height: calc(100vh - 5em);
     width: 100%;
     display: flex;
     margin: 0 auto;
@@ -200,21 +200,20 @@ main div {
 }
 
 .subproduct:hover .product-image {
-    width: 280px;
+    width: 220px;
 }
 
 .subproduct {
     background-color: var(--color-yellow);
-    width: fit-content;
-    height: fit-content;
     flex-shrink: 2;
+    flex-grow: 1;
+    font-size: 12px;
     transition-duration: 0.5s;
-    transition-property: background-color transform box-shadow;
+    transition-property: background-color box-shadow;
 }
 
 .subproduct:hover {
     background-color: #FFCE47;
-    transform: translateY(-10px);
     box-shadow: 1px 1px 5px gray;
 }
 
@@ -244,7 +243,6 @@ textarea {
        By default, textareas have a monospace font */
     font: 1em sans-serif;
     /* Uniform text field size */
-    width: 300px;
     box-sizing: border-box;
     /* Match form field borders */
     border: 1px solid #FF8E72;
