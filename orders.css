@@ -174,7 +174,7 @@ main div {
 }
 /* makes the checkboxs not have the boxes */
 .user-form .product .productlist .subproduct .checkboxes {
-    visibility: hidden
+    visibility: hidden;
 }
 
 /* Product CSS */
@@ -210,7 +210,11 @@ main div {
     font-size: 12px;
     transition-duration: 0.5s;
     transition-property: background-color box-shadow;
+    max-width: 250px;
+    align-self: flex-start;
 }
+
+
 
 .subproduct:hover {
     background-color: #FFCE47;
@@ -222,6 +226,7 @@ main div {
     flex-flow: row;
     justify-content: space-evenly;
     background-color: #FF8E72;
+    flex-wrap: wrap;
 }
 
 .Product-title {
