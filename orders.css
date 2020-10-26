@@ -227,6 +227,7 @@ main div {
     justify-content: space-evenly;
     background-color: #FF8E72;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .Product-title {
