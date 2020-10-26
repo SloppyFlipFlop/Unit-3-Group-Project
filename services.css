@@ -42,6 +42,7 @@
     background-color: #ffbb00;
     transform: translateY(-10px);
     box-shadow: 1px 1px 5px gray;
+    z-index: 2;
 }
 
 .productlist {
