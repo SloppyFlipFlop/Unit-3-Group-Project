@@ -214,7 +214,7 @@ main div {
 
 .subproduct:hover {
     background-color: #FFCE47;
-    box-shadow: 1px 1px 5px gray;
+    box-shadow: 1px 1px 5px black;
     transform: rotate(5deg) rotateY(-15deg);
 }
 
