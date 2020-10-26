@@ -199,17 +199,13 @@ main div {
     transition-property: width height;
 }
 
-.subproduct:hover .product-image {
-    width: 220px;
-}
-
 .subproduct {
     background-color: var(--color-yellow);
     flex-shrink: 2;
     flex-grow: 1;
     font-size: 12px;
     transition-duration: 0.5s;
-    transition-property: background-color box-shadow;
+    transition-property: background-color transform box-shadow;
     max-width: 250px;
     align-self: flex-start;
 }
@@ -218,15 +214,17 @@ main div {
 
 .subproduct:hover {
     background-color: #FFCE47;
-    box-shadow: 1px 1px 5px gray;
+    box-shadow: 1px 1px 5px black;
+    transform: rotate(5deg) rotateY(-15deg);
 }
 
 .productlist {
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #FF8E72;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .Product-title {
